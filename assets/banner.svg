@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <!-- Animated dynamic background elements placed safely in background -->
+    <style>
+      @keyframes floatSlow {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-15px) rotate(3deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      @keyframes pulseGlow {
+        0% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.55; transform: scale(1.08); }
+        100% { opacity: 0.25; transform: scale(1); }
+      }
+      @keyframes dashFlow {
+        0% { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .bg-glow { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .bg-float1 { animation: floatSlow 8s ease-in-out infinite; transform-origin: center; }
+      .bg-float2 { animation: floatSlow 10s ease-in-out infinite reverse; transform-origin: center; }
+      .stream-line { stroke-dasharray: 20 10; animation: dashFlow 20s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Animated Background Orbs & Accents (Behind Text) -->
+  <g class="bg-glow">
+    <circle cx="150" cy="80" r="180" fill="#4f46e5" opacity="0.25" filter="blur(40px)" />
+    <circle cx="1050" cy="220" r="200" fill="#d946ef" opacity="0.2" filter="blur(50px)" />
+  </g>
+
+  <!-- Dynamic Geometric Tech Shapes (Background layer) -->
+  <g opacity="0.15">
+    <path class="stream-line" d="M -50 250 Q 300 50 600 250 T 1250 50" fill="none" stroke="url(#accentGrad)" stroke-width="4" />
+    <path class="stream-line" d="M -50 100 Q 400 280 800 100 T 1250 220" fill="none" stroke="#38bdf8" stroke-width="3" />
+  </g>
+
+  <g class="bg-float1" opacity="0.12">
+    <rect x="80" y="40" width="90" height="90" rx="18" fill="none" stroke="#ffffff" stroke-width="2" />
+    <circle cx="1020" cy="80" r="45" fill="none" stroke="#ffffff" stroke-width="2" />
+  </g>
+  <g class="bg-float2" opacity="0.12">
+    <polygon points="1100,240 1150,160 1050,170" fill="none" stroke="#ffffff" stroke-width="2" />
+    <rect x="150" y="200" width="70" height="70" rx="14" fill="none" stroke="#ffffff" stroke-width="2" />
+  </g>
+
+  <!-- Decorative Top Bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accentGrad)" />
+
+  <!-- Foreground Content Block (Ensured top priority & perfect contrast) -->
+  <!-- Tag / Badge -->
+  <g transform="translate(60, 48)">
+    <rect width="250" height="32" rx="16" fill="#6366f1" opacity="0.3" />
+    <rect width="250" height="32" rx="16" fill="none" stroke="#818cf8" stroke-width="1.5" />
+    <text x="125" y="21" fill="#c7d2fe" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="middle">CURATED LMS ECOSYSTEM</text>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="132" fill="url(#textGrad)" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="800" letter-spacing="-0.5">Awesome Learning Management</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="175" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400">
+    Top Corporate &amp; Educational LMS Platforms, Open-Source GitHub Repositories &amp; SaaS Solutions
+  </text>
+
+  <!-- Feature Pills / Highlights -->
+  <g transform="translate(60, 215)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="220" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="24" cy="19" r="6" fill="#10b981" />
+      <text x="40" y="24" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">SaaS &amp; Commercial LMS</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(236, 0)">
+      <rect width="240" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="24" cy="19" r="6" fill="#6366f1" />
+      <text x="40" y="24" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Open-Source GitHub Repos</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(492, 0)">
+      <rect width="210" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="24" cy="19" r="6" fill="#f59e0b" />
+      <text x="40" y="24" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Market Size &amp; Pricing</text>
+    </g>
+  </g>
+</svg>
