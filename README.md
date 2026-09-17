@@ -56,9 +56,9 @@ The table below details commercial LMS solutions, sorted descending by estimated
 
 ## 🔓 Open-Source GitHub LMS Projects 💻
 
-Open-source learning management systems offer full data sovereignty, zero licensing fees, and infinite customization. Sorted descending by GitHub star count.
+Open-source learning management systems offer full data sovereignty, zero licensing fees, and infinite customization. Sorted descending by GitHub Stars_Count.
 
-| 📦 Repository & Project | 🌟 GitHub Stars | 📜 License | 🧰 Tech Stack | 💡 Overview & Primary Use Case |
+| 📦 Repository & Project | 🌟 GitHub_Stars | 📜 License | 🧰 Tech Stack | 💡 Overview & Primary Use Case |
 | :--- | :--- | :--- | :--- | :--- |
 | **[openedx/edx-platform](https://github.com/openedx/edx-platform)** | [![openedx/edx-platform stars](https://img.shields.io/github/stars/openedx/edx-platform?style=social&color=white)](https://github.com/openedx/edx-platform/stargazers) | AGPL-3.0 | Python / Django / React | Powered edX.org; massive scale platform built for MOOCs, universities, and multi-tenant national learning initiatives. |
 | **[moodle/moodle](https://github.com/moodle/moodle)** | [![moodle/moodle stars](https://img.shields.io/github/stars/moodle/moodle?style=social&color=white)](https://github.com/moodle/moodle/stargazers) | GPL-3.0 | PHP / MySQL / Postgres | World's most popular open-source LMS with thousands of community plugins, extensive assessment tools, and mobile app support. |
